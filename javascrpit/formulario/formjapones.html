@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        .containerMain {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        .containerImagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+        }
+        .containerForm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            height: 100vh;
+            width: 100%;
+        }
+        .subContainerForm{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
+            width: 100%;
+        }
+        .subContainerForm form h1{
+            text-align: center;
+            
+        }
+        .subContainerForm form textarea{
+            height: 50vh;
+            width: 70vh;
+        }
+        .containerInputText {
+            display: flex;
+            flex-direction: column;
+        }
+        .containerInputText input{
+            margin: 20px;
+            height: 5vh;
+        }
+
+        .containerRadio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 2px white;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .containerRadio input{
+            margin: 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="containerMain">
+        <div class="containerImagem">
+            <img src="./IMG-20200417-WA0050[363].jpg" alt="">
+        </div>
+        <div class="containerForm">
+            <div class="subContainerForm">
+                
+                <form>
+                    <h1>Titulo teste</h1> 
+                    <div class="containerInputText">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <div class="containerRadio">
+                        <input type="radio" name="selec">
+                        <input type="radio" name="selec">
+                        <input type="radio" name="selec">
+                    </div>
+
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

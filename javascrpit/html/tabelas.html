@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tabela</title>
+</head>
+<style>
+    .container {
+        max-width: 500px;
+        max-height: 500px;
+        width: auto;
+        height: auto;
+    }
+
+    a {
+        font-size: large;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    thead tr {
+        border-bottom: solid 3px #444;
+    }
+
+    tbody tr:hover {
+        background-color: #dedede;
+    }
+</style>
+
+<body>
+
+    <main>
+        <div>
+            <h1>A estrutura básica de uma tabela HTML</h1>
+            <p>As tags que vão formar a estrutura básica de uma tabela em HTML são as tags <b>tr</b> e <b></td></b>. A
+                tag <b>tr</b> representa uma linha e a tag <b>td</b> representa uma célula. Desta forma, a criação de
+                colunas em uma tabela HTML é feita automaticamente através da quantidade de células incluídas dentro de
+                uma linha. Por exemplo, vejamos na imagem abaixo como essa estrutura é formada:</p>
+            <img class="container" src="/tabela_1-768x598.png">
+            <h1>Célula de título da tabela HTML</h1>
+            <p>Caso queira incluir uma ou mais células que representem títulos, ganhando um destaque em relação às
+                demais células, pode utilizar a tag <b>th</b> .</p>
+            <img src="/tabela_2e3-768x299.png">
+        </div>
+        <div>
+            <h1>Tags estruturais da tabela</h1>
+            <p>Anteriormente, vimos que a estrutura básica de uma tabela consiste nas tags tr, td e as células de título
+                th. Porém, além dessas, também há tags que servem para estruturar melhor a tabela. São elas</p>
+            <ul>
+                <li> <b>thead</b> – Esta tag representa o cabeçalho da tabela, geralmente composta por células título;
+                </li>
+                <li> <b>tbody</b> – Essa tag representa o corpo da tabela; </li>
+                <li> <b>tfoot</b> – Essa tag representa o rodapé da tabela. </li>
+            </ul>
+            <p>Portanto, essas tags tem como principal efeito manter uma semântica adequada para suas tabelas.</p>
+            <p>Sendo assim, vejamos então a seguinte imagem para exemplificar a estrutura de uma tabela:</p>
+            <img class="container" src="/tabela_4-768x576.png">
+        </div>
+    </main>
+
+    <b></b>
+    <nav>
+        <a href="https://www.homehost.com.br/blog/criar-sites/tabela-html/">mais sobre tabelas</a>
+    </nav>
+    <hr>
+
+    <div>
+        <h2>Exemplo</h2>
+        <table>
+            <caption>
+                <h3>Prudutos</h3>
+            </caption>
+            <thead>
+                <!--cabecalho da tabela-->
+                <tr>
+                    <th>produtos</th>
+                    <th>preco</th>
+                    <th>total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--dados corpor da tabela-->
+                <tr>
+                    <td>td</td>
+                    <td>td</td>
+                    <td>td</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <caption>
+                <h3>Alien football stars</h3>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">th</th>
+                    <th scope="col">th</th>
+                    <th scope="col">th</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">TR-7</th>
+                    <td>7</td>
+                    <td>4,569</td>
+                </tr>
+                <tr>
+                    <th scope="row">Khiresh Odo</th>
+                    <td>7</td>
+                    <td>7,223</td>
+                </tr>
+                <tr>
+                    <th scope="row">Mia Oolong</th>
+                    <td>9</td>
+                    <td>6,219</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

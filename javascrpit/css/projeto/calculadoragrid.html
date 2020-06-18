@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .buttons{
+           background-color: red;
+        }
+        .corpo2{
+            width: 200px;
+            height: 300px;
+            background-color: wheat;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            
+        }
+        .mais{
+            grid-column: 1 /4 ;
+           
+        }
+        .zero{
+		background-color: #adadad;
+        grid-row: 7;
+        grid-column: 1/3;
+        
+	}
+    .virgula{
+        grid-row: 7;
+    }
+    </style>
+</head>
+<body>
+  
+    <div class="corpo2">
+           		
+		<button>AC</button> <button>%</button> <button>x</button> <button>/</button> 
+		<button>7</button> <button>8</button> <button>9</button> <button>=</button>
+		<button>4</button> <button>5</button> <button>6</button>  <button>-</button> 
+		<button>1</button> <button>2</button> <button>3</button> <button class="mais">+</button>
+        <button class="zero">0</button> <button class="virgula">,</button>  
+    </div>     
+    
+</body>
+</html>

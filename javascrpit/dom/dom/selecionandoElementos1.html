@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #01</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo">.terceiro .ultimo</div>
+    <script>
+/*
+        Usar classList é uma alternativa conveniente para acessar a lista de classes de um
+        elemento como uma seqüência delimitada por espaço através de element.className.
+         Métodos
+        add( String [, String] )
+        Adicione valores de classe especificados. Se essas classes já existem no atributo do elemento, elas são ignoradas.
+
+        remove( String [,String] )
+        Remover valores de classe específicos.
+        item ( Number )
+
+        Retorna o valor da classe por índice na coleção.
+        toggle ( String [, force] )
+        
+        Quando apenas um argumento está presente: Toggle class value; Ou seja, se a classe existir, em seguida, removê-lo e retornar false, se não, então adicioná-lo e retornar true.
+        Quando um segundo argumento está presente: Se o segundo argumento é avaliado como true, adicione o valor especificado da classe e, se ele for avaliado como false, remova-o.
+        contains( String )
+        Verifica se o valor da classe especificado existe no atributo de classe do elemento.
+*/
+        document.getElementById('primeiro').classList.add('destaque'); //getElementById selecionado um elemento com id correspondente entra parentesses  classList.add adiciona uma class ao elemento
+        
+        const divs = document.getElementsByTagName('div'); // getElementsByTagName seleciona uma tag com nome correspondente entre os parentesses
+        
+        Array.from(divis).forEach(elemento => classList.remove('destaque'));//tranformando um html colaction em um array
+        const divisArray = [...divis] //outra forma de tranformar em array
+
+        const ultimoElementos = getElementsByClassName('ultimo'); // getElementsByClassName seleciona uma classe 
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+         
+            height: 100vh;
+
+            
+          
+        }
+    
+        
+        .c1{background-color: blue;}
+        .c2{ background-color: brown;}
+        .c3{background-color: chartreuse;}
+        a{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            top: auto;
+           
+           
+            
+         
+        }
+        .c1{
+            
+         
+        }
+        .c2{
+          
+        
+        }
+        .c3{
+          
+            
+        }
+
+        .containerFlex{
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -100px;
+            
+        }
+        div{
+            margin: 10px;
+        }
+        .img{
+            width: 100%;
+            height: 300px;
+        }
+        .div{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<!--
+    Se a propriedade CSS box-sizing está configurada como padrão, 
+    as propriedades CSS width, min-width, max-width, height,
+    min-height e max-height controlam o tamanho do conteúdo.
+
+    O espaço entre os edges de preenchimento e conteúdo 
+    podem ser controlados utilizando as seguintes propriedades
+    CSS padding-top, padding-right, padding-bottom, 
+    padding-left e na forma generalizada padding.
+
+    A área de borda (border area) estende a área de preenchimento para 
+    a área que contém as bordas. Esta é a área de dentro do border edge,
+    e suas dimensões são a largura e a altura do border-box. Esta área 
+    depende do tamanho da borda que está definido pela propriedade 
+    border-width ou pela propriedade border.
+    
+    O tamanho da área de margem é controlada utilizando 
+    as seguintes propriedades CSS margin-top, margin-right,
+    margin-bottom, margin-left 
+    e na forma generalizada margin.
+-->
+    
+    <div class="div">
+        <img src="../img/02.jpg" alt="" srcset="" class="img" />
+    </div>
+    <div class="containerFlex">
+        <div>
+            <img src="../img/01.jpg" alt="" srcset=""/>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Sequi similique laboriosam minima libero dolores nemo hic earum 
+                facilis. Vero veniam, harum accusamus alias dignissimos maiores 
+                minima temporibus maxime odit!</p>
+        </div>
+        <div>
+            <img src="../img/01.jpg" alt="" srcset=""/>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>
+                Sequi similique laboriosam minima libero dolores nemo hic earum <br/>
+                facilis. Vero veniam, harum accusamus alias dignissimos maiores  <br>
+                minima temporibus maxime odit!</p>
+        </div>
+        <div>
+            <img src="../img/01.jpg" alt="" srcset=""/>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>
+                Sequi similique laboriosam minima libero dolores nemo hic earum <br/>
+                facilis. Vero veniam, harum accusamus alias dignissimos maiores  <br>
+                minima temporibus maxime odit!</p>
+        </div>
+    </div>
+</body>
+</html>

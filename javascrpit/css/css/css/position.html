@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        /* ..
+Valores Chave 
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+
+Valores Globais 
+position: inherit;
+position: initial;
+position: unset;
+A propriedade position em CSS define alternativas para posicionar elementos, projetados para serem úteis em efeitos de animações.     
+        
+Um elemento posicionado é aquele cuja posição computada será uma dentre: relative, absolute, fixed ou sticky.
+
+Um elemento posicionado relativamente é aquele cuja posição foi configurada como relative.
+
+Um elemento posicionado absolutamente é aquele cuja posição foi configurada como absolute ou fixed.
+
+Um elemento posicionado como "pegajoso" é aquele cuja posição foi configurada como sticky.
+
+As propriedades top, right, bottom, e left especificam a posição que os elementos dispostos terão em tela.
+Valores
+static
+Faz o elemento ter um comportamento normal, que é o de manter sua posição atual no fluxo da página.  As propriedades top, right, bottom, left e z-index não se aplicam para elementos com posição static.
+relative
+Este valor apresenta todos os elementos como se o elemento não tivesses sido posicionado, e então ajusta a posição do elemento, sem alterar o layout (e assim, mantendo o elemento caso não tivesse sido alterado). o efeito de  position: relative em elementos table-*-group, table-row, table-column, table-cell, e table-caption é indefinida.
+absolute
+Não deixa espaço para o elemento. Ao invés disso, position it at a specified position relative to its closest positioned ancestor or to the containing block. Absolutely positioned boxes can have margins, they do not collapse with any other margins.
+ 
+
+
+
+color:...........cor da fonte;
+  font-family:.....família (tipo) de fontes;
+  font-size:.......tamanho da fonte;
+  font-style:......estilo da fonte;
+  font-variant:....fontes maiúsculas de menor altura;
+  font-weight:.....peso da fonte;
+  font-stretch:....grau de espansão/contração dos glifos;
+  font:............maneira abreviada para declarar todas 
+                   as propriedades anteriores (exceto cor).
+
+
+
+
+
+
+
+
+
+ */
+        div {
+            width: auto;
+            height: auto;
+            color: #ffffff;
+            font-size: 60px;
+            padding: 30px;
+            border: solid 1px black;
+            margin: 10px;
+        }
+        .static{
+            top: 100px;
+            left: 100px;
+            background-color: tomato;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 10px;
+            right: 0;
+            background-color: yellowgreen;
+        }
+        .absolute1{
+            position: absolute;
+            left: 350px;
+            top: 600px;
+            background-color: violet;
+        }
+        .relative1{
+            background-color: yellow;
+            position: relative;
+            left: 50px;
+            top:10px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">Fixed</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+
+    <div class="relative2">
+        <div class="absolute2"></div>
+    </div>
+
+    <div class="sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
+</body>
+
+</html>

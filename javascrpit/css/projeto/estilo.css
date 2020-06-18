@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /*editando a fonte  */
+    background: #ccc;
+    margin: 0%;
+}
+.hero{
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    background-position: right center ;
+    background-size: cover;
+    opacity: 0.8;
+}
+.hero-content{
+    text-align: center; /*text-align: define a posicao;*/
+    color: white;
+    margin-top: 50px;
+}
+.hero-content h1{ /*acessando h1 pela class*/
+    color: black;
+    text-shadow: 3px 3px 5px blue;
+    font-size: 47px;
+}
+
+.hero-content p{
+    font-size: large;
+    text-shadow: 3px 3px 5px red;
+}
+#par1{
+    font-size: large;
+    color:  white;
+}
+.menu{
+    background-image: url(/css/imagens/bg-4.jpg);
+    height: 500px;
+    background-position: right center ;
+    background-size: contain;
+    opacity: 0.7;
+}
+
+
+
+/*
+background-color (define a cor do fundo);
+background-image (define uma imagem de fundo);
+background-repeat (define a maneira como a imagem de fundo é posicionada);
+background-attachment (define se a imagem de fundo "rola" ou não com a tela);
+background-position (define como e onde a imagem de fundo é posicionada);
+background-clip (define a área do box onde a imagem de fundo é aplicada);
+background-origin (define a posição de origem da imagem no box);
+background-size (define as dimensões da imagem no box);
+background (maneira abreviada para declarar todas as propriedades anteriores).
+
+
+
+
+
+
+
+
+background-color:
+código hexadecimal: #ffc6d9
+código rgb: rgb(255,235,0)
+código rgba: rgb(255,235,0, 0.7)
+código hsl: hsl(210,100%,40%)
+código hsla: hsla(155,80%,35%,0.4)
+palavra-chave: red, blue, green...etc
+transparente: transparent
+background-image:
+URL: url(caminho/imagem.gif)
+URL: url('caminho/imagem.gif')
+URL: url("caminho/imagem.gif")
+Gradiente linear: linear-gradient(45deg, blue, red)
+Gradiente radial: radial-gradient(20px 50px, green, blue, red)
+O uso de aspas simples ou duplas no URL da imagem é facultativo
+
+background-repeat:
+imagem não repete: no-repeat
+imagem repete na vertical e horizontal: repeat
+imagem repete na vertical: repeat-y
+imagem repete na horizontal: repeat-x
+imagem toca as quatro bordas internas do box e são espaçadas de modo a se distribuirem igualmente: space
+imagem toca as quatro bordas internas do box e são redimensionadas de modo a preencherem o fundo tocando umas nas outras: round
+background-attachment:
+imagem permanece fixa em relação à viewport (janela do navegador) e não rola juntamente com o conteúdo: fixed
+imagem não permanece fixa em relação à viewport (janela do navegador) e rola juntamente com o conteúdo - este é o valor padrão: scroll
+imagem permanece fixa em relação à viewport (janela do navegador) mas quando aplicada ao box de um elemento rola juntamente com o conteúdo se o elemento tiver um mecanismo de rolagem definido por overflow: scroll: local
+background-position:
+Xpx Ypx
+X% Y%
+top left
+top center
+top right
+center left
+center center
+center right
+bottom left
+bottom center
+bottom right
+top
+right
+bottom
+left
+background-clip:
+a imagem ocupa até a área das bordas do box, inclusive, se houver uma - este é o comportamento padrão: border-box
+a imagem ocupa até a área de padding do box, inclusive, se houver uma e não ocupa a área de bordas: padding-box
+a imagem ocupa até a área de conteúdo do boxe não ocupa as áreas de padding e bordas se houver: content-box
+background-origin:
+a a imagem tem por origem o canto superior esquerdo do box considerada das bordas do box, se houver uma - este é o comportamento padrão: border-box
+a imagem tem por origem o canto superior esquerdo do box sem considerar as bordas do box, se houver uma: padding-box
+a imagem tem por origem o canto superior esquerdo do box sem considerar o padding e as bordas do box, se houver: content-box
+background-size:
+a imagem terá as dimensões definidas por unidade de medida CSS: 150px 70px
+a imagem terá suas dimensões originais - este é o valor padrão: auto
+a imagem terá as dimensões de modo a que sua maior dimensão ocupe toda a extensão do box e a menor dimensão seja tal que o aspect ratio (relação entre largura e altura) seja preservado: contain
+a imagem terá as dimensões de modo a que sua menor dimensão ocupe toda a extensão do box e a maior dimensão seja tal que o aspect ratio (relação entre largura e altura) seja preservado: cover
+
+
+Propriedade	Descrição	Valores
+background	Propriedade para configurar todas as propriedades do plano de fundo em uma declaração	background-color, background-image, background-repeat background-attachment, background-position
+background-attachment	Especifica se uma imagem de plano de fundo é fixa ou rola com o resto da página	scroll, fixed
+background-color	Configura a cor do plano de fundo de um elemento.	color-rgb, color-hex, color-name, transparent
+background-image	Configura uma imagem como plano de fundo.	url, none
+background-position	Configura a posição inicial de uma imagem de plano de fundo.	top left, top center, top right, center left, center center, center right, bottom left, bottom center, bottom right, x-% y-%, x-pos y-pos.
+background-repeat	Estabelece se uma imagem de plano de fundo será repetida ou não.	repeat, repeat-x, reapeat-y, no-repeat
+
+*/
+

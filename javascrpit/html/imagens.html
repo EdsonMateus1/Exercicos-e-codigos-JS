@@ -1,0 +1,145 @@
+<p>
+    <img src="../img/bg-1.jpg" alt="altenativo quando a imagen nao carrega e etc" width="500" height="342"
+        title="titulo da imagem">
+
+    O elemento HTML img (or HTML Image Element) representa a inserção de imagem no documento, sendo implementado também
+    pelo HTML5 para uma melhor experiência com o elemento figure e figcaption.
+
+    Atributos
+    Este Elemeto inlcui o atributo global.
+
+    align Deprecated since HTML4.01, Obsolete since HTML5 Use the vertical-align CSS property
+    The alignment of the image with respect to its surrounding context.
+    alt
+    Este atributo define um texto alternativo que descreve a imagem. Os Usuários irão ver o texto se a URL da imagem
+    estiver errado, a imagem não está em um dos formatos suportados ou até a imagem ser baixada .
+    Usage note: Omitting this attribute indicates that the image is a key part of the content, but no textual equivalent
+    is available. Setting this attribute to the empty string indicates that this image is not a key part of the content;
+    non-visual browsers may omit it from rendering.
+    <img src="/img/bg-3.jpg" title="titulo da imagem" width="500" height="342">
+    border Deprecated since HTML4.01, Obsolete since HTML5
+    The width of a border around the image.
+    crossorigin HTML5
+    This enumerated attribute indicates if the fetching of the related image must be done using CORS or not.
+    CORS-enabled images can be reused in the canvas element without being tainted. The allowed values are:
+    anonymous
+    A cross-origin request (i.e. with Origin: HTTP header) is performed. But no credential is sent (i.e. no cookie,
+    no X.509 certificate and no HTTP Basic authentication is sent). If the server does not give credentials to the
+    origin site (by not setting the Access-Control-Allow-Origin: HTTP header), the image will be tainted and its
+    usage restricted..
+    use-credentials
+    A cross-origin request (i.e. with Origin: HTTP header) performed with credential is sent (i.e. a cookie, a
+    certificate and HTTP Basic authentication is performed). If the server does not give credentials to the origin
+    site (through Access-Control-Allow-Credentials: HTTP header), the image will be tainted and its usage
+    restricted.
+    When not present, the resource is fetched without a CORS request (i.e. without sending the Origin: HTTP header),
+    preventing its non-tainted usage in canvas elements. If invalid, it is handled as if the enumerated keyword
+    anonymous was used. See CORS settings attributes for additional information.
+    height
+    The height of the image in HTML5 CSS pixels, or HTML 4 in pixels or as a percentage.
+    hspace Deprecated since HTML4.01, Obsolete since HTML5
+    The number of pixels of white space to insert to the left and right of the image.
+    ismap
+    This Boolean attribute indicates that the image is part of a server-side map. If so, the precise coordinates
+    of a click are sent to the server.
+    Usage note: This attribute is allowed only if the img element is a descendant of an a element with a
+    valid href attribute.
+
+    longdescHTML 4 only
+    The URL of a description of the image to be displayed, which supplements the alt text. In HTML5, use a
+    regular a element to link to the description.
+    name Deprecated since HTML4.01, Obsolete since HTML5
+    A name for the element. It is supported in HTML 4 only for backward compatibility. Use the id
+    attribute instead.
+    src
+    Image URL, this attribute is obligatory for the img element. On browsers supporting srcset, src is
+    ignored if this one is provided.
+    srcsetHTML5
+    A list of one or more strings separated by commas indicating a set of possible images for the user
+    agent to use. Each string is composed of:
+    one URL to an image,
+    a width descriptor, that is a positive integer directly followed by 'w'. The default value, if
+    missing, is the infinity.
+    a pixel density descriptor, that is a positive floating number directly followed by 'x'. The default
+    value, if missing, is 1x.
+    Each string in the list must have at least a width descriptor or a pixel density descriptor to be
+    valid. Among the list, there must be only one string containing the same tuple of width descriptor
+    and pixel density descriptor.
+    The browser chooses the most adequate image to display at a given point of time.
+
+    width
+    The width of the image in pixels or percent.
+    usemap
+    The partial URL (starting with '#') of an image map associated with the element.
+    Usage note: You cannot use this attribute if the img element is a descendant of an a or button
+    element.
+
+    vspace Deprecated since HTML4.01, Obsolete since HTML5
+    The number of pixels of white space to insert above and below the image.
+
+    <figure>
+        <img src="/img/bg-2.jpg" alt="Minha Figura" width="500" height="342">
+        <figcaption>Informações da Figura</figcaption>
+    </figure>
+
+
+
+
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img">imgDeveloper<a>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/picture">Tag</a>
+</p>
+
+<p>
+    <picture>
+        <source src="/img/card_01.png" media="(min-width: 600px)">
+        <img src="/img/card_04.jpg" alt="">
+    </picture>
+</p>
+<!--width largura 
+    height altura
+    align alinhamento
+    O elemento HTML <img>  (or HTML Image Element)
+    representa a inserção de imagem no documento,
+    sendo implementado também pelo HTML5 para uma 
+    melhor experiência com o elemento <figure> e <figcaption>.
+
+Exemplo da implementação do HTML5 
+<figure>
+  <img src="imagem.jpg" alt="Minha Figura">	
+  <figcaption>Informações da Figura</figcaption>
+</figure>
+
+
+
+
+
+O elemento HTML <picture> é um container usado para especificar múltiplos
+elementos <source> para um elemento específico <img> contido nele. 
+O navegador irá escolher a imagem mais adequada de acordo com o 
+layout atual da página, caracteristicas do dispositivo em que será 
+exibido (p.e. um dispositivo normal ou um hiDPI), e a habilidade do 
+navegador de renderizar um certo tipo de imagem (p.e., envie uma imagem WebP 
+para os navegadores baseados no Chromium ou PNG para navegadores não-Chromium); 
+se não houver correspondência entre os elementos <source>, o arquivo especificado 
+pelo elemento <img> será selecionado. A imagem selecionada é então exibida no espaço ocupado pelo elemento <img>.
+
+
+
+
+Exemplo 1: Uso com atributo media 
+O atributo media permite você especificar uma media query que o navegador irá avaliar para selecionar um elemento <source> . Se a media query retornar falso, o elemento <source> é ignorado.
+
+<picture>
+ <source srcset="mdn-logo-wide.png" media="(min-width: 600px)">
+ <img src="mdn-logo-narrow.png" alt="MDN">
+</picture>
+
+Exemplo 2: Uso com atributo type
+O atributo type lhe permite especificar um tipo MIME para o(s) recurso(s) fornecido(s) no atributo srcset do elemento <source>. Se o navegador não suporta o tipo especificado, o elemento <source> é ignorado.
+
+​<picture>
+ <source srcset="mdn-logo.svg" type="image/svg+xml">
+ <img src="mdn-logo.png" alt="MDN">
+</picture>
+
+-->

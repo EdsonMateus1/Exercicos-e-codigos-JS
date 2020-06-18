@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #02</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
+    <script>
+        /*
+        Sumário
+        Retorna o primeiro elemento dentro do documento (usando ordenação em profundidade, pré-ordenada e transversal dos nós do documento) que corresponde ao grupo especificado
+        de seletores.
+        Sintaxe
+        element = document.querySelector(selectors);
+        Onde:
+        element é um objeto Element.
+        selectors é uma string que contém um ou mais 
+        seletores CSS separados por vírgulas.
+
+        Retorna uma lista de elementos presentes no documento (usando ordenação 
+        em profundidade, pré-ordenada e transversal dos nós do documento) que
+        coincidam com o grupo de seletores especificado. O objeto 
+        retornado é uma NodeList.
+        Sintaxe
+        elementList = document.querySelectorAll(selectors);
+
+        onde
+
+        elementList é uma NodeList não-viva (alterações no DOM não refletem na lista) de objetos Element.
+        selectors é uma string contendo um ou mais seletores CSS separados por vírgulas.
+        A NodeList retornada irá conter todos os elementos do documento que coincidam com os seletores especificados. Se a string selectors conter um CSS pseudoelements, o retorno será uma NodeList vazia.
+
+        */
+        document.querySelector('#primeiro').classList.add('destaque');
+
+        const selecionar = seletor =>
+            document.querySelectorAll(seletor).forEach(elementoDoArray => elementoDoArray.classList.add('destaque'));
+
+        const deselecionar = seletor =>
+            document.querySelectorAll(seletor).forEach(elementoDoArray => elementoDoArray.classList.remove('destaque'));
+
+        selecionar('div');
+        deselecionar('div');
+        selecionar(':not(#primeiro)')//not comando de negacao ou seja vai ser selecionado todos elementos menos o #primero
+        deselecionar('*')// * seletor universal
+    </script>
+</body>
+
+</html>
