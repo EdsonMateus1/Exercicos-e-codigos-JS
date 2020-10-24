@@ -125,8 +125,13 @@ function fabricadeED(nome, idade, saudadacao, valor, _salario) {
     }
 }
 
+const edsonTeste = fabricadeED('edson', 20, 'oi', 2000, 4000)
+
+
 const edson2 = new fabricadeED('edson', 20, 'oi', 2000, 4000)
+
 edson2.falar()
+
 console.log(edson2.salario1);
 
 // usando classe

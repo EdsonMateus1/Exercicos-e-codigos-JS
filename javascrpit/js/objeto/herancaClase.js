@@ -33,6 +33,11 @@ class tvSansung extends dispo {
         this.modelo = modelo;
     }
 }
+const tv = new tvSansung("tv","rosa","lg")
+
+console.log(tv);
+
+
 //heranca com object.creat
 const pai = {
     nome: "seila",

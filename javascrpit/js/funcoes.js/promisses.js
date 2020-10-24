@@ -63,7 +63,7 @@ whoIsBetterCallback(result => {
 
 const betterDeveloper1 = 'vanessa';
 
-function whoIsBetterCallback1(callback, errorCallback) {
+function whoIsBetterCallback1() {
     return new Promise((resolve, reject) => {
 
         if (betterDeveloper1 != 'vanessa' && betterDeveloper1 != 'gabriel') {
