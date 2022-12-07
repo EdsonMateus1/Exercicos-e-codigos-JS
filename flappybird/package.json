@@ -15,7 +15,7 @@
   "license": "ISC",
   "homepage":"https://github.com/EdsonTioed/flappybird2#readme", 
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   }
 }
   
